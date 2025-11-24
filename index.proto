@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package tinyscanner;
+
+import "token/messages.proto";
+import "wallet/messages.proto";
+
+
+service Tinyscanner {
+    rpc GetToken (token.GetTokenRequest) returns (token.GetTokenResponse);
+    rpc GetTokenPrice (token.GetTokenPriceRequest) returns (token.GetTokenPriceResponse);
+    rpc AddToken (token.AddTokenRequest) returns (token.AddTokenResponse);
+    rpc AddWallet (wallet.AddWalletRequest) returns (wallet.AddWalletResponse);
+    rpc GetWallet (wallet.GetWalletRequest) returns (wallet.GetWalletResponse);
+    rpc GetWalletTokens (wallet.GetWalletTokensRequest) returns (wallet.GetWalletTokensResponse); 
+    rpc GetWalletDetails (wallet.GetWalletDetailsRequest) returns (wallet.GetWalletDetailsResponse);
+}

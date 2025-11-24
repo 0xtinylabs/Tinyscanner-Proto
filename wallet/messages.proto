@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package wallet;
+
+import "common/common.proto";
+
+message AddWalletRequest {
+    string walletAddress = 1;
+}
+
+message AddWalletResponse {
+    bool success = 1;
+}
+
+message GetWalletRequest {
+    string walletAddress = 1;
+    common.CHAIN chain = 2; 
+}
+
+message GetWalletResponse {
+    common.Wallet walletData = 1; 
+}
+
+message GetWalletTokensRequest {
+    string walletAddress = 1;
+    common.CHAIN chain = 2;
+}
+
+message GetWalletTokensResponse {
+    repeated common.WalletToken tokens = 1;
+    int64 numberOfTokens = 2;
+}
+
+message GetWalletDetailsRequest {
+    string walletAddress = 1;
+    common.CHAIN chain = 2;
+}
+
+message GetWalletDetailsResponse {
+    repeated common.WalletToken tokens = 1;
+    int64 numberOfTokens = 2;
+    common.Wallet walletData = 3;
+}
