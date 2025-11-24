@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package token;
+package tinyscanner_token;
 
 option go_package = "tinyscanner_token/proto";
 

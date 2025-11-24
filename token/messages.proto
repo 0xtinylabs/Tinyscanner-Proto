@@ -2,7 +2,11 @@ syntax = "proto3";
 
 package token;
 
+option go_package = "tinyscanner_token/proto";
+
 import "common/common.proto";
+
+
 
 enum TokenAddingType {
     DUPLICATE = 0;

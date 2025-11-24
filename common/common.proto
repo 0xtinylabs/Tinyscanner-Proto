@@ -2,7 +2,11 @@ syntax = "proto3";
 
 package common;
 
-option go_package = "common/proto";
+// Change with app name when generating -> {module name}/proto/common
+// TOKEN: tinyscanner-token/proto/common
+// WALLET: tinyscanner-wallet/proto/common
+
+option go_package = "tinyscanner-token/proto/common";
 
 
 // COMMON
@@ -35,6 +39,7 @@ message Wallet {
     string totalDollarValue = 2;
     string nativeBalance = 3;
     string nativeBalanceFormatted = 4;
+    repeated string tokenAddresses = 5;
 }
 
 message WalletToken {

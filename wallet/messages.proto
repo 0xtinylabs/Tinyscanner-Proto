@@ -2,6 +2,9 @@ syntax = "proto3";
 
 package wallet;
 
+option go_package = "tinyscanner_wallet/proto";
+
+
 import "common/common.proto";
 
 message AddWalletRequest {

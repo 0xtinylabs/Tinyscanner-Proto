@@ -1,15 +1,14 @@
 syntax = "proto3";
 
-package wallet;
-
+package tinyscanner_wallet;
 
 option go_package = "tinyscanner_wallet/proto";
 
-import "common/common.proto";
+import "wallet/messages.proto";
 
 service TinyScannerWallet {
-    rpc AddWallet (common.AddWalletRequest) returns (common.AddWalletResponse);
-    rpc GetWallet (common.GetWalletRequest) returns (common.GetWalletResponse);
-    rpc GetWalletTokens (common.GetWalletTokensRequest) returns (common.GetWalletTokensResponse); 
-    rpc GetWalletDetails (common.GetWalletDetailsRequest) returns (common.GetWalletDetailsResponse);
+    rpc AddWallet (wallet.AddWalletRequest) returns (wallet.AddWalletResponse);
+    rpc GetWallet (wallet.GetWalletRequest) returns (wallet.GetWalletResponse);
+    rpc GetWalletTokens (wallet.GetWalletTokensRequest) returns (wallet.GetWalletTokensResponse); 
+    rpc GetWalletDetails (wallet.GetWalletDetailsRequest) returns (wallet.GetWalletDetailsResponse);
 }
