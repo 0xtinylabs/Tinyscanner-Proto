@@ -10,6 +10,7 @@ service Tinyscanner {
     rpc GetToken (token.GetTokenRequest) returns (token.GetTokenResponse);
     rpc GetTokenPrice (token.GetTokenPriceRequest) returns (token.GetTokenPriceResponse);
     rpc AddToken (token.AddTokenRequest) returns (token.AddTokenResponse);
+    rpc RemoveToken (token.RemoveTokenRequest) returns (token.RemoveTokenResponse);
     rpc AddWallet (wallet.AddWalletRequest) returns (wallet.AddWalletResponse);
     rpc GetWallet (wallet.GetWalletRequest) returns (wallet.GetWalletResponse);
     rpc GetWalletTokens (wallet.GetWalletTokensRequest) returns (wallet.GetWalletTokensResponse); 
