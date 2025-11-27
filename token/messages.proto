@@ -68,7 +68,7 @@ message RemoveTokenResponse {
 
 
 message GetTokensRequest {
-    repeated string tokenAddress = 1;
+    repeated string tokenAddresses = 1;
 }
 
 
