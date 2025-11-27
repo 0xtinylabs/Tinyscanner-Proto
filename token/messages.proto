@@ -67,7 +67,9 @@ message RemoveTokenResponse {
 }
 
 
-message GetTokensRequest {}
+message GetTokensRequest {
+    repeated string tokenAddress = 1;
+}
 
 
 
