@@ -15,9 +15,15 @@ message AddWalletResponse {
     bool success = 1;
 }
 
+enum DataType {
+    API = 0;
+    SCANNER = 1;
+}
+
 message GetWalletRequest {
     string walletAddress = 1;
     common.CHAIN chain = 2; 
+    DataType type = 3;
 }
 
 message GetWalletResponse {
@@ -27,6 +33,7 @@ message GetWalletResponse {
 message GetWalletTokensRequest {
     string walletAddress = 1;
     common.CHAIN chain = 2;
+    DataType type = 3;
 }
 
 message GetWalletTokensResponse {
@@ -37,6 +44,7 @@ message GetWalletTokensResponse {
 message GetWalletDetailsRequest {
     string walletAddress = 1;
     common.CHAIN chain = 2;
+    DataType type = 4;
 }
 
 message GetWalletDetailsResponse {

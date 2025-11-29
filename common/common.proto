@@ -6,7 +6,7 @@ package common;
 // TOKEN: tinyscanner-token/proto/common
 // WALLET: tinyscanner-wallet/proto/common
 
-option go_package = "tinyscanner-token/proto/common";
+option go_package = "tinyscanner-wallet/proto/common";
 
 
 // COMMON

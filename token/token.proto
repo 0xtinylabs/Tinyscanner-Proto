@@ -13,4 +13,5 @@ service TinyScannerToken {
     rpc GetTokenPrice (token.GetTokenPriceRequest) returns (token.GetTokenPriceResponse);
     rpc AddToken (token.AddTokenRequest) returns (token.AddTokenResponse);
     rpc RemoveToken (token.RemoveTokenRequest) returns (token.RemoveTokenResponse);
+    rpc AddBlacklist (token.AddBlacklistRequest) returns (token.AddBlacklistResponse);
 }

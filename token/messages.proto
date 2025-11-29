@@ -76,3 +76,13 @@ message GetTokensRequest {
 message GetTokensResponse {
     repeated common.Token tokens = 1;
 }
+
+message AddBlacklistRequest {
+    repeated string tokenAddresses = 1;
+}
+
+message AddBlacklistResponse {
+    bool success = 1;
+}
+
+
