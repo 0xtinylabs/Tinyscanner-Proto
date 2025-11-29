@@ -52,3 +52,12 @@ message GetWalletDetailsResponse {
     int64 numberOfTokens = 2;
     common.Wallet walletData = 3;
 }
+
+message UpdateWalletPortfolioRequest {
+    string walletAddress = 1;
+    string totalDollarValue = 2;
+}
+
+message UpdateWalletPortfolioResponse {
+    bool success = 1; 
+}

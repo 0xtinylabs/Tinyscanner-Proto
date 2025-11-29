@@ -11,4 +11,5 @@ service TinyScannerWallet {
     rpc GetWallet (wallet.GetWalletRequest) returns (wallet.GetWalletResponse);
     rpc GetWalletTokens (wallet.GetWalletTokensRequest) returns (wallet.GetWalletTokensResponse); 
     rpc GetWalletDetails (wallet.GetWalletDetailsRequest) returns (wallet.GetWalletDetailsResponse);
+    rpc UpdateWalletPortfolio (wallet.UpdateWalletPortfolioRequest) returns (wallet.UpdateWalletPortfolioResponse);
 }
