@@ -51,4 +51,5 @@ message WalletToken {
     string tokenImage = 6;
     string tokenName = 7;
     string tokenSymbol = 8;
+    string tokenVolume = 9;
 }
