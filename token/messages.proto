@@ -28,6 +28,7 @@ message AddTokenRequest {
     optional string poolAddress = 5; 
     optional string circulatedSupply = 6;
     optional string pairAddress = 7;
+    optional string reason = 8;
 }
 
 message AddTokenResponse {
