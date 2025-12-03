@@ -6,7 +6,7 @@ package common;
 // TOKEN: tinyscanner-token/proto/common
 // WALLET: tinyscanner-wallet/proto/common
 
-option go_package = "tinyscanner-wallet/proto/common";
+option go_package = "tinyscanner-token/proto/common";
 
 
 // COMMON
@@ -30,6 +30,7 @@ message Token {
     string supply = 9; 
     string circulatedSupply = 10;
     string pairAddress = 11;
+    string reason = 12;
  }
 
 // WALLET
