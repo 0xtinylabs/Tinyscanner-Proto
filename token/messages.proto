@@ -29,6 +29,7 @@ message AddTokenRequest {
     optional string circulatedSupply = 6;
     optional string pairAddress = 7;
     optional string reason = 8;
+    optional string initialPrice = 9;
 }
 
 message AddTokenResponse {
