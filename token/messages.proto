@@ -41,6 +41,7 @@ message AddTokenResponse {
 
 message GetTokenRequest {
     string tokenAddress = 1;
+    optional string reason = 2;
 }
 
 message GetTokenPriceRequest {
