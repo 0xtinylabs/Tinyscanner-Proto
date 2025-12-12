@@ -41,6 +41,7 @@ message AddTokenResponse {
 
 message GetTokenRequest {
     string tokenAddress = 1;
+    bool addIfNotExist = 2;
 }
 
 message GetTokenPriceRequest {
